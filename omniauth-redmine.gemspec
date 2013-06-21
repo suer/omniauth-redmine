@@ -4,12 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'omniauth/redmine/version'
 
 Gem::Specification.new do |spec|
+  spec.add_dependency 'omniauth', '~> 1.1'
+
   spec.name          = "omniauth-redmine"
   spec.version       = Omniauth::Redmine::VERSION
   spec.authors       = ["suer"]
   spec.email         = ["suetsugu.r@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{An OmniAuth strategy for Redmine}
+  spec.summary       = %q{An OmniAuth strategy for Redmine}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -17,6 +19,9 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
+
+  spec.add_runtime_dependency 'omniauth-oauth'
+  spec.add_runtime_dependency 'multi_json'
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
