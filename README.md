@@ -5,6 +5,14 @@ Strategy to authenticate with Redmine via OAuth in Redmine.
 
 ## Installation
 
+Install by Rubygems
+
+    $ gem install omniauth-redmine
+
+Or write on your Gemfile
+
+    gem "omniauth-redmine", "~> 0.0.1"
+
 Build gem package:
 
     $ rake build
