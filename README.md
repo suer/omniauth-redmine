@@ -1,4 +1,4 @@
-# Omniauth::Redmine
+# OmniAuth Redmine
 
 Strategy to authenticate with Redmine via OAuth in Redmine.
 (https://github.com/suer/redmine_oauth_provider)
