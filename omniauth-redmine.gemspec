@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'omniauth/redmine/version'
 
 Gem::Specification.new do |spec|
-  spec.add_dependency 'omniauth', '~> 1.1'
+  spec.add_dependency 'omniauth', '~> 2.0'
 
   spec.name          = "omniauth-redmine"
   spec.version       = Omniauth::Redmine::VERSION
