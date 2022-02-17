@@ -11,7 +11,7 @@ Install by Rubygems
 
 Or write on your Gemfile
 
-    gem "omniauth-redmine", "~> 0.0.2"
+    gem "omniauth-redmine", "~> 0.0.3"
 
 Build gem package:
 
